@@ -6,7 +6,7 @@ entrada = entrada.replace(",", ".")
 num = float(entrada)
 
 print("O número digitado foi {} e sua porção inteira é {}".format(num, math.trunc(num)))
-print("O número digitado foi {} e sua porção inteira é {}".format(num, math.floor(num)))
+print("O número digitado foi {} e sua porção inteira é {}".format(num, math.floor(num))) 
 print("O número digitado foi {} e sua equivalência para cima é {}".format(num, math.ceil(num)))
 
 """ print("O número digitado foi {} e sua porção inteira é {}".format(num, math.trunc(num)))
