@@ -3,7 +3,7 @@ import pygame as pg
 
 pg.init()
 
-lista = ["camille", "babidi", "laura", "silvana", "gabriel", "morgana", "europa", "marcio", "marcos", "lilian", "marta", "luiz", "marcia", "louise", "nicolas", "loyola", "leonardo"]
+lista = ["######## CENSURADO ########"]
 
 while True:
     nome = input("\nDigite um nome (ou 'sair' para encerrar): ").lower()
