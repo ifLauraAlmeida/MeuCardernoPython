@@ -1,3 +1,2 @@
-frase = str(input('Digite um nome: '))
-
-print(frase[::-1])
+template = "olá {nome}"
+print(template.format(nome="Gabriel"))
