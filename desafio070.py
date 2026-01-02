@@ -4,20 +4,31 @@
 # B) quantos produtos custam mais de R$1000.
 # C) qual é o nome do produto mais barato. 
 
-valorprodutomaisbarato = 0
-caro = 0
+total = totmil = menor = cont = 0
+barato = ''
+
 while True:
     produto = str(input("Qual o nome do produto? "))
     preco = int(input("Qual o preço? "))
-    if preco >= 1000:
-        caro += 1
     
-    barato = produto
-    if  :
+    cont += 1
+    total += preco
 
-    tot += preco
-    print("=="*25)
-    print(f"""      O total gasto na compra foi: R${tot:.2f}.")
-    O total de produtos que custam mais de R$1000 é: {caro}.
-    """)
-    print("=="*25)
+    if preco > 1000:
+        totmil +=1
+
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = produto
+
+    resp = ' '
+
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
+    if resp =='N':
+        break
+
+print('FIM DO PROGRAMA')
+print(f"O total da compra foi R${total:.2f}")
+print(f"Temos {totmil} produtos custando mais de R$1000.00")
+print(f"O produto mais barato foi {barato} que custa R${menor:.2f}.")
