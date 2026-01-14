@@ -17,7 +17,7 @@ while True:
     
 print(f'Você digitou {len(valores)} elementos. ')
 print(f'Os valores em ordem decrescente são: {sorted(valores, reverse=True)}')  # reverse=True para inverter a ordem para decrescente
-
+#print(f'Os valores em ordem decrescente são: {valores.sort(rever=True)}')
 # sort() → modifica a lista
 # sorted() → retorna uma nova lista
 
