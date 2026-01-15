@@ -5,7 +5,8 @@
 #c) Uma listagem com as pessoas mais leves.
 
 galera = []
-maior = menor = 0
+maior = []
+menor = []
 
 while True:
     nome = input('Nome: ')
@@ -13,12 +14,13 @@ while True:
     galera.append([nome, peso])
 
     if len(galera) == 1:
-        maior = menor = peso
+        maior = [nome, peso]
+        menor = [nome, peso]
     else:
-        if peso > maior:
-            maior = peso
-        if peso < menor:
-            menor = peso
+        if peso > maior[1]:
+            maior = [nome, peso]
+        if peso < menor[1]:
+            menor = [nome, peso]
 
     resp = input('Quer continuar [S/N]? ').upper().strip()[0]
     if resp == 'N':
@@ -27,11 +29,7 @@ while True:
 print(f'Total de pessoas cadastradas: {len(galera)}')
 
 print('Pessoas mais pesadas:')
-for p in galera:
-    if p[1] == maior:
-        print(f'{p[0]} com {p[1]}kg')
+print(maior)
 
 print('Pessoas mais leves:')
-for p in galera:
-    if p[1] == menor:
-        print(f'{p[0]} com {p[1]}kg')
+print(menor)
