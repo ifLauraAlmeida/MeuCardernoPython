@@ -16,7 +16,7 @@ impares.sort()
 print(f'Os valores pares digitados foram: {pares}')
 print(f'Os valores ímpares digitados foram: {impares}')
 
-#OU
+#Outra forma de executar 
 
 num = [[], []]
 for c in range(0,7):
