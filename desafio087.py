@@ -8,9 +8,22 @@ soma = 0
 
 for l in range(0,3):
     for c in range(0,3):
-        matriz[l][c] = int(input(f'Digite um valor para a linha {l} coluna {c}: '))
+        valor = int(input(f'Digite um valor para a linha {l} coluna {c}: '))
+        matriz[l].append(valor)
         if matriz[l][c] % 2 == 0:
             soma += matriz[l][c]
-print(matriz)
-print('=='*30)
-print(soma)
+            
+print('-='*30)
+print()
+print(f'Esses são os valores da terceira coluna: ', end='')
+print(f'{matriz[2]}')
+print()
+print('-='*30)
+print()
+print(f'A soma de todos os números pares é: {soma}')
+print()
+print('-='*30)
+print()
+print(f'O maior valor da segunda linha da matriz é: {max(matriz[1])}')
+print()
+print('-='*30)
