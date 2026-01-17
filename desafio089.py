@@ -1,4 +1,7 @@
-# Exercício 089 – Boletim com cores (Azul e Amarelo)
+#Exercício Python 089: Crie um programa que leia nome e duas notas de vários 
+#alunos e guarde tudo em uma lista composta. No final, mostre um boletim 
+#contendo a média de cada um e permita que o usuário possa mostrar as notas 
+#de cada aluno individualmente.
 
 dados_turma = []
 
@@ -50,3 +53,7 @@ while True:
         print(f'{NEGRITO}Notas de {dados_turma[opcao][0]}:{RESET} '
               f'{AMARELO}{dados_turma[opcao][1]}{RESET} e '
               f'{AMARELO}{dados_turma[opcao][2]}{RESET}')
+
+
+
+    
