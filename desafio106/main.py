@@ -13,7 +13,7 @@
 import moeda
 
 num = float(input('Digite o preço: '))
-print(f'O dobro de R${num:.2f} é igual á {moeda.moeda(moeda.dobro(num))}.')
-print(f'A metade de R${num:.2f} é igual á {moeda.moeda(moeda.metade(num))}.')
-print(f'Aumentando 10%, temos {moeda.moeda(moeda.aumentar(num))}.')
-print(f'Diminuindo 10%, temos {moeda.moeda(moeda.diminuir(num))}.')
+print(f'O dobro é igual á {moeda.dobro(num, True)}.')
+print(f'A metade é igual á {moeda.metade(num, True)}.')
+print(f'Aumentando 10%, temos {moeda.aumentar(num,10, True)}.')
+print(f'Diminuindo 10%, temos {moeda.diminuir(num,20, True)}.')
