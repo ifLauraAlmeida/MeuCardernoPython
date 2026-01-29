@@ -10,10 +10,17 @@
 # desafio 107 para que elas aceitem um parâmetro a mais, 
 # informando se o valor retornado por elas vai ser ou não 
 # formatado pela função moeda(), desenvolvida no desafio 108.
+
+
+
+#Exercício Python 110: Adicione o módulo moeda.py criado nos
+# desafios anteriores, uma função chamada resumo(), que mostre
+# na tela algumas informações geradas pelas funções que já temos 
+# no módulo criado até aqui.
+
+
+
 import moeda
 
-num = float(input('Digite o preço: '))
-print(f'O dobro é igual á {moeda.dobro(num, True)}.')
-print(f'A metade é igual á {moeda.metade(num, True)}.')
-print(f'Aumentando 10%, temos {moeda.aumentar(num,10, True)}.')
-print(f'Diminuindo 10%, temos {moeda.diminuir(num,20, True)}.')
+p = float(input('Digite o preço: '))
+moeda.resumo(p,10,20)
