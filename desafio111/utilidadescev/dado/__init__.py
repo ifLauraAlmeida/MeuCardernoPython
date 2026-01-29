@@ -1,21 +1,25 @@
 def leiadinheiro(mensagem):
     while True:
-        try:
-            valor_entrada = input(mensagem).strip()
-            
-            # Verifica se está vazio
-            if not valor_entrada:
-                print('ERRO: você não digitou nada! Por favor digite um valor monetário válido!')
-                continue
-            
-            # Tenta converter para float
-            valor = float(valor_entrada)
-            
-            # Verifica se é negativo
-            if valor < 0:
-                print('ERRO: por favor digite um valor positivo!')
-                continue
-            
-            return valor
-        except ValueError:
-            print('ERRO: entrada inválida! Por favor digite um valor monetário válido (apenas números e ponto)!')
+        valor_entrada = input(mensagem).strip()
+        
+        if not valor_entrada:
+            print('ERRO: digite um valor!')
+            continue
+        
+        valido = True
+        for caractere in valor_entrada:
+            if caractere not in '0123456789.':
+                valido = False
+                break
+        
+        if not valido:
+            print('ERRO: apenas números e ponto!')
+            continue
+        
+        valor = float(valor_entrada)
+        
+        if valor < 0:
+            print('ERRO: apenas valores positivos!')
+            continue
+        
+        return valor

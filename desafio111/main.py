@@ -10,5 +10,5 @@
 
 from utilidadescev import moeda, dado
 
-p = dado.leiaDinheiro('Digite o preço: ')
+p = dado.leiadinheiro('Digite o preço: ')
 moeda.resumo(p,10,20)

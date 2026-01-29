@@ -5,11 +5,20 @@
 
 def leia_int(msg):
     while True:
-        try:
-            n = int(input(msg))
-            return n
-        except ValueError:
+        entrada = input(msg).strip()
+        
+        valido = True
+        for caractere in entrada:
+            if caractere not in '-0123456789':
+                valido = False
+                break
+        
+        if not valido:
             print('ERRO! Digite um número inteiro válido.')
+            continue
+        
+        n = int(entrada)
+        return n
 
 #Programa principal
 n = leia_int('Digite um número: ')
