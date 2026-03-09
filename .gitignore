@@ -1,4 +1,9 @@
+# virtual environment
 .venv/
+
+# vscode
 .vscode/
 
-__init__.py
+# python cache
+__pycache__/
+*.pyc
